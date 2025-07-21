@@ -8,7 +8,7 @@ import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import "./app.css";
+import "./App.css";
 
 const App = () => {
   return (
