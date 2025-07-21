@@ -22,7 +22,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:8080/api/auth/login", formData);
+      const res = await axios.post("https://fitzone-webapp.zeabur.app/api/auth/login", formData);
 
       if (res.data.message === "Login successful.") {
         await MySwal.fire({
