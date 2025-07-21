@@ -25,7 +25,7 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:8080/api/contact/send/mail", formData);
+      const res = await axios.post("https://fitzone-webapp.zeabur.app/api/contact/send/mail", formData);
 
       if (res.data.success) {
         await MySwal.fire({
