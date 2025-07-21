@@ -21,7 +21,7 @@ const Register = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:8080/api/auth/register", formData);
+      const res = await axios.post("https://fitzone-webapp.zeabur.app/api/auth/register", formData);
 
       if (res.data.message === "User registered successfully.") {
         await MySwal.fire({
